@@ -5,7 +5,7 @@ class Estoque {
     private List<Produto> produtos;
 
     public Estoque() {
-        this.produtos = new ArrayList<>(); // Inicializa a lista de produtos
+        this.produtos = new ArrayList<>(); 
     }
 
     public void exibirPrecosComDesconto(double porcentagem) {
