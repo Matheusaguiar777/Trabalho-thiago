@@ -1,9 +1,9 @@
 
-import java.util.Scanner; // Certifique-se de importar Scanner
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Certifique-se de que está importando Scanner corretamente
+        Scanner scanner = new Scanner(System.in);
         Estoque estoque = new Estoque();
 
         while (true) {
@@ -14,7 +14,7 @@ public class Main {
             System.out.println("5. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar buffer
+            scanner.nextLine();
 
             if (opcao == 1) {
                 System.out.print("Digite o nome do produto: ");
@@ -22,11 +22,11 @@ public class Main {
 
                 System.out.print("Digite o preço do produto: ");
                 double preco = scanner.nextDouble();
-                scanner.nextLine(); // Limpar buffer
+                scanner.nextLine(); 
 
                 System.out.print("Digite o tipo do produto (1- Eletrônico / 2- Alimento): ");
                 int tipo = scanner.nextInt();
-                scanner.nextLine(); // Limpar buffer
+                scanner.nextLine(); 
 
                 Produto produto;
                 if (tipo == 1) {
